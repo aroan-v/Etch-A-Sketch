@@ -32,6 +32,15 @@ body {
 	align-items: flex-start;
 }
 
+.credits {
+	align-self: center;
+	margin-top: 1rem;
+}
+.github-logo {
+    width: 0.875rem;
+    height: 0.875rem;
+}
+
 .title {
 	color: #FFF;
 	height: 3.58356rem;
@@ -116,9 +125,6 @@ input[type="color"] {
 }
 
 
-
-/* Test */
-
 input[type="range"] {
 	/* removing default appearance */
 	-webkit-appearance: none;
@@ -181,9 +187,6 @@ input[type="range"]:active::-moz-range-thumb {
 input[type="range"]:focus::-moz-range-thumb {
 	box-shadow: 0 0 0 2.03125rem rgba(21, 21, 21, 0.2); /* 13px in rem */
 }
-
-  
-/* End of Test */
 
 .brush-button,
 .shading-button,
