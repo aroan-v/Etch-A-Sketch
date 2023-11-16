@@ -1,37 +1,62 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2299.6">
-  <link rel='stylesheet' href='style-v2.css'/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <title></title>
+    <meta name="Generator" content="Cocoa HTML Writer" />
+    <meta name="CocoaVersion" content="2299.6" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="main-container">
       <section class="control-buttons">
         <div class="color-control">
           <label for="base">Change Color</label>
-          <input id="base" type="color" name="base" value="#000000">
+          <input id="base" type="color" name="base" value="#000000" />
         </div>
         <div class="grid-control">
-          <label for="grid-size">Grid Size:  <span id="grid-size-value">10 x 10</span></label>
-          <input type="range" id="grid-size" min="10" max="40" value="10">
-          <button id="border" class="border-button active"> Toggle Borders</button>
+          <label for="grid-size"
+            >Grid Size: <span id="grid-size-value">10 x 10</span></label
+          >
+          <input type="range" id="grid-size" min="10" max="40" value="10" />
         </div>
         <div class="paint-control">
-          <button id="brush" class="brush-button active"> Brush Mode </button>
+          <button id="border" class="border-button active">
+            Toggle Borders
+          </button>
+          <button id="brush" class="brush-button active">Brush Mode</button>
           <button id="shade" class="shading-button">Shading Mode</button>
           <button id="rainbow" class="rainbow-button">Rainbow Mode</button>
         </div>
         <div class="erase-control">
           <button id="erase" class="erase-button">Eraser</button>
           <button id="eraseShader" class="erase-shader-button">Lighten</button>
-          <button id="clear" class="clear-button"> Clear Art board</button>
+          <button id="clear" class="clear-button">Clear Art board</button>
+        </div>
+        <div class="credits">
+          <a href="https://www.google.com" target="_blank" class="svg-icon">
+            <svg width="101" height="41.14">
+              <image href="images/name.svg" />
+            </svg>
+          </a>
+          <div class="github-icon">
+            <a
+              href="https://www.google.com"
+              target="_blank"
+              class="svg-github-icon"
+            >
+              <svg width="22.3965" height="22.3965">
+                <image href="images/github-icon.svg" alt="GitHub icon" />
+              </svg>
+            </a>
+          </div>
         </div>
       </section>
       <div class="sketch-area">
@@ -39,15 +64,8 @@
         <div class="grid-container">
           <!-- Generate grid items using JavaScript -->
         </div>
-        <div class="credits">
-          <span>Made by: </span>
-          <a href="https://github.com/create-josh/Etch-A-Sketch" target="_blank">
-            <img class="github-logo" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github Logo">
-            <span>create-josh</span>
-          </a>
-        </div>
       </div>
     </div>
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
